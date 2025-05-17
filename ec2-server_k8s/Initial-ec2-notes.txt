@@ -1,0 +1,29 @@
+Notes:
+This will create ec2 server
+
+
+Need to create ec2-instance using terraform with all required softwares 
+
+1. aws configure --> in your local git bash
+
+2. check all details in terraform files
+security_group 
+public subnetid
+ami details
+s3 bucket name
+dynamo db table name
+
+3. terraform commands to create server
+terraform init
+terraform plan
+terraform apply -auto-approve
+
+4. connect to server with putty using public IP
+
+username : ec2-user
+password : DevOps321
+
+5. after completion of your work delete server
+
+terraform destroy -auto-approve
+

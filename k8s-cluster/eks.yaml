@@ -1,0 +1,11 @@
+apiVersion: eksctl.io/v1alpha5
+kind: ClusterConfig
+metadata:
+  name: expense
+  region: us-east-1
+managedNodeGroups:
+  - name: expense
+    #instanceType: m5.large --> we need to use this for actual applications
+    instanceType: t2.medium  #-->this is for testing only
+    desiredCapacity: 2
+    spot: true 
